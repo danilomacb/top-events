@@ -15,35 +15,35 @@ client.on("ready", async () => {
 
   channel = await client.channels.fetch(channelId);
 
-  schedule.scheduleJob(`${minutes} 1 * * *`, () => {
+  schedule.scheduleJob(`${minutes} 0 * * *`, () => {
     channel.send(fcMessage);
   });
 
-  schedule.scheduleJob(`${minutes} 4 * * *`, () => {
+  schedule.scheduleJob(`${minutes} 3 * * *`, () => {
     channel.send(fcMessage);
   });
 
-  schedule.scheduleJob(`${minutes} 7 * * *`, () => {
+  schedule.scheduleJob(`${minutes} 6 * * *`, () => {
     channel.send(fcMessage);
   });
 
-  schedule.scheduleJob(`${minutes} 10 * * *`, () => {
+  schedule.scheduleJob(`${minutes} 9 * * *`, () => {
     channel.send(fcMessage);
   });
 
-  schedule.scheduleJob(`${minutes} 13 * * *`, () => {
+  schedule.scheduleJob(`${minutes} 12 * * *`, () => {
     channel.send(fcMessage);
   });
 
-  schedule.scheduleJob(`${minutes} 16 * * *`, () => {
+  schedule.scheduleJob(`${minutes} 15 * * *`, () => {
     channel.send(fcMessage);
   });
 
-  schedule.scheduleJob(`${minutes} 19 * * *`, () => {
+  schedule.scheduleJob(`${minutes} 18 * * *`, () => {
     channel.send(fcMessage);
   });
 
-  schedule.scheduleJob(`${minutes} 22 * * *`, () => {
+  schedule.scheduleJob(`${minutes} 21 * * *`, () => {
     channel.send(fcMessage);
   });
 });
