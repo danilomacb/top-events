@@ -13,8 +13,18 @@ const minutes = 60 - messageDelay;
 const role = "<@&816040318096375868>";
 
 function scheduleMessage(hour, eventName) {
-  schedule.scheduleJob(`${minutes} ${--hour} * * *`, () => {
-    channel.send(`${role} ${eventName} in ${messageDelay} minutes!`);
+  schedule.scheduleJob(`${minutes} ${--hour} * * *`, async () => {
+    let sendedMessage;
+    try {
+      sendedMessage = await channel.send(`${role} ${eventName} in ${messageDelay} minutes!`);
+    } catch (err) {
+      console.log("Fail to get sended message", err);
+      return;
+    }
+
+    setTimeout(() => {
+      sendedMessage.delete();
+    }, messageDelay * 60000);
   });
 }
 
