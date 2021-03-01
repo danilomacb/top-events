@@ -13,7 +13,7 @@ const minutes = 60 - messageDelay;
 const role = "<@&816040318096375868>";
 
 function scheduleMessage(hour, eventName) {
-  schedule.scheduleJob(`${minutes} ${hour--} * * *`, () => {
+  schedule.scheduleJob(`${minutes} ${--hour} * * *`, () => {
     channel.send(`${role} ${eventName} in ${messageDelay} minutes!`);
   });
 }
