@@ -47,7 +47,7 @@ client.on("ready", async () => {
   scheduleMessage(19, "*", "FC and DS");
   scheduleMessage(22, "*", "FC and DS");
 
-  scheduleMessage(11, "*", "CD");
+  scheduleMessage(9, "*", "CD");
   scheduleMessage(23, "*", "CD");
 
   scheduleMessage(3, "*", "CI");
