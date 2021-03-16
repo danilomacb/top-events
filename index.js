@@ -53,7 +53,7 @@ client.on("ready", async () => {
   scheduleMessage(3, "*", "CI");
   scheduleMessage(15, "*", "CI");
 
-  scheduleMessage(6, "*", "CTF");
+  scheduleMessage(12, "*", "CTF");
   scheduleMessage(21, "*", "CTF");
 
   scheduleMessage(0, "*", "CA");
