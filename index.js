@@ -71,6 +71,9 @@ client.on("ready", async () => {
   scheduleMessage(13, 2, "SW");
   scheduleMessage(13, 4, "SW");
   scheduleMessage(13, 6, "SW");
+
+  scheduleMessage(2, "*", "Egg Hunt Mini Game");
+  scheduleMessage(14, "*", "Egg Hunt Mini Game");
 });
 
 client.login(process.env.TOKEN);
