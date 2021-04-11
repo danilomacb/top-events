@@ -61,19 +61,16 @@ client.on("ready", async () => {
   scheduleMessage(9, "*", "CA");
   scheduleMessage(17, "*", "CA");
 
-  scheduleMessage(3, "*", "DW");
-  scheduleMessage(7, "*", "DW");
-  scheduleMessage(11, "*", "DW");
-  scheduleMessage(15, "*", "DW");
-  scheduleMessage(19, "*", "DW");
-  scheduleMessage(23, "*", "DW");
+  scheduleMessage(0, "*", "DW");
+  scheduleMessage(4, "*", "DW");
+  scheduleMessage(8, "*", "DW");
+  scheduleMessage(12, "*", "DW");
+  scheduleMessage(16, "*", "DW");
+  scheduleMessage(20, "*", "DW");
 
   scheduleMessage(13, 2, "SW");
   scheduleMessage(13, 4, "SW");
   scheduleMessage(13, 6, "SW");
-
-  scheduleMessage(2, "*", "Egg Hunt Mini Game");
-  scheduleMessage(14, "*", "Egg Hunt Mini Game");
 });
 
 client.login(process.env.TOKEN);
